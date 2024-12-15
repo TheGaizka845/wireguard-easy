@@ -25,7 +25,7 @@ docker run --detach \
   --name wg-easy \
   --env LANG=de \
   --env WG_HOST=$ip \
-  --env "$passhash" \
+  --env $passhash \
   --env PORT=51821 \
   --env WG_PORT=51820 \
   --volume ~/.wg-easy:/etc/wireguard \
