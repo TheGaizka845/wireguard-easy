@@ -8,7 +8,7 @@ sudo usermod -aG docker $(whoami)
 
 # Pedir la contraseña
 echo "Introduce la contraseña:"
-read -s contrasena
+read contrasena
 
 # Obtener el hash de la contraseña
 passhash=$(docker run --rm -it ghcr.io/wg-easy/wg-easy wgpw $contrasena)
