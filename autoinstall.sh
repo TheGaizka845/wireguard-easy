@@ -11,7 +11,7 @@ echo "Introduce la contraseña:"
 read -s contrasena
 
 # Obtener el hash de la contraseña
-passhash=$(docker run --rm -it ghcr.io/wg-easy/wg-easy wgpw "$contrasena")
+passhash=$(docker run --rm -it ghcr.io/wg-easy/wg-easy wgpw $contrasena)
 
 # Mostrar el hash para verificarlo
 echo "El hash de la contraseña es: $passhash"
